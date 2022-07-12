@@ -1,13 +1,14 @@
 import './App.css';
 import Header from './components/Header';
+import MegaMenu from './components/MegaNavBar';
+import RegisterForm from './components/RegisterForm';
 
 function App() {
   return (
     <div>
+      <MegaMenu/>
       <Header/>
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
+      <RegisterForm/>
     </div>
   );
 }

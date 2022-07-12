@@ -4,11 +4,13 @@ import { useTranslation } from "react-i18next";
 export default function Header() {
     const[t, i18n]=useTranslation("global");
     return(
+        <>
+        <center>
         <div>
-            <h1>{t("header.hello-word")}</h1>
+            <p>{t("header.hello-word")}</p>
             <br/><br/>
-            <button onClick={()=>i18n.changeLanguage("es")}>ES</button>
-            <button onClick={()=>i18n.changeLanguage("en")}>EN</button>
         </div>
+        </center>
+        </>
     );
 }
